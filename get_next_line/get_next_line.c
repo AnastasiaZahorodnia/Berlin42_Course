@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: azahoroz <azahoroz@student.42berlin.de>    +#+  +:+       +#+      */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/16 18:40:42 by azahoroz          #+#    #+#           */
+/*   Updated: 2024/03/16 18:40:42 by azahoroz         ###   ########.fr     */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 static char	*ft_free(char **str)
@@ -91,4 +103,4 @@ char	*get_next_line(int fd)
 	line = ft_extract_line(stash);
 	stash = ft_update_stash(stash);
 	return (line);
-} 
+}
